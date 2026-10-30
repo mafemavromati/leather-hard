@@ -1,0 +1,18 @@
+:root { --paper: #F3F0EA; --surface: #FBF9F5; --ink: #292825; --muted: #66635D; --celadon: #49685B; --line: #D9D3C9; }
+@media (prefers-color-scheme: dark) { :root { --paper: #1B1A18; --surface: #252421; --ink: #F1EDE6; --muted: #B3ADA3; --celadon: #A9C4B7; --line: #3A3833; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+header { display: flex; align-items: center; gap: 14px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+header img { width: 56px; height: 56px; border-radius: 13px; }
+.brand { font-family: "IM Fell English", Georgia, serif; font-size: 30px; margin: 0; }
+nav { margin-left: auto; font-size: 14px; }
+nav a { color: var(--celadon); margin-left: 12px; }
+h1 { font-family: "IM Fell English", Georgia, serif; font-weight: 400; font-size: 34px; line-height: 1.2; margin: 36px 0 8px; }
+h2 { font-size: 17px; margin: 28px 0 4px; }
+p, li { color: var(--muted); }
+a { color: var(--celadon); }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin: 20px 0; }
+.card strong { color: var(--ink); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0 0; }
+footer { font-size: 13px; color: var(--muted); margin-top: 32px; }
